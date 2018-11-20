@@ -53,7 +53,7 @@ public class SuMAnwendung extends EBAnwendung
         bSelection = new Knopf(400,10,100,25,"Selection Sort","bSelectionGeklickt");
         bQuick = new Knopf(500,10,100,25,"Quick Sort","bQuickGeklickt");
 
-        zeit = new Etikett(950,50,30,30,"ggg");
+        zeit = new Etikett(800,50,100,30,"ggg");
         test = new Etikett(10,50,990,25,"");
         test.setzeSchriftgroesse(20);
 
@@ -168,7 +168,7 @@ public class SuMAnwendung extends EBAnwendung
         {
             quick.quickSort(array, n);
             sorted = true;
-            zeit.setzeInhalt(quick.time());
+            zeit.setzeInhalt("Quicksort:" + quick.time());
         }
     }
 }
